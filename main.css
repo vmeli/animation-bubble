@@ -1,0 +1,98 @@
+html,
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.banner {
+	position: relative;
+	background-image: url(londres.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.bubble1 {
+	background-image: url(bubble.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: bubble1 2s infinite linear;
+}
+
+.bubble2 {
+	background-image: url(bubble.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: 300px;
+	filter: blur(1px);
+	animation: bubble2 3s infinite linear;
+}
+
+.bubble3 {
+	background-image: url(bubble.png);
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-size: 800px;
+	filter: blur(2px);
+	animation: bubble3 4s infinite linear;
+}
+
+@keyframes bubble1 {
+
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position:  10% 100%;		
+	}
+}
+  
+
+@keyframes bubble2 {
+
+	0% {
+		background-position: 0 -10%;
+	}
+
+	100% {
+		background-position:  0 100%;		
+	}
+
+}
+
+
+@keyframes bubble3 {
+
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position:  30% 100%;		
+	}
+}
+
+
+
+
